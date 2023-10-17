@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .resume-container {
+            width: 600px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .resume {
+            display: flex;
+            position: relative;
+        }
+
+        .left-column {
+            flex: 1;
+            padding-right: 100px;
+        }
+
+        .right-column {
+            flex: 2;
+            padding-left: 50px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Add this to create the vertical line */
+        .resume::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            border-left: 2px solid #555;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <hr>
+        <h1><b>RESUME</b></h1>
+        <hr>
+        <div class="resume">
+            <div class="left-column">
+                <div class="section">
+                    <div class="section-title">Personal Information:</div>
+                    <div class="section-content">
+                        <P><img src="images/myimage..jpeg", height="150" alt ="Image not found."></P>
+                    <p>Name: Gandeev Potnuru</p>
+                    <p>Email:<a href="gandeevp@gmail.com" target="_blank">gandeevp@gmail.com</a></p>
+                    <p>Phone: +91 7386457975</p>
+                    <p><b>Linkedin:</b><a href="https://www.linkedin.com/in/gandeev-potnuru-064969212/" target="_blank">Linkedin Profile</a></p>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Education:</div>
+                    <div class="section-content">
+                        <p>College: BV RAJU INSTITUTE OF TECHNOLOGY</p>
+                        <p>Degree: B.Tech</p>
+                        <p>Branch: Computer Science and Engineering</p>
+                        <p>7.08 CGPA</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Skills</div>
+                    <div class="section-content">
+                        <ul type="square">
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li><b>C++</b></li>
+                        </ul>
+                        <ol type ="1">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>XML</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="section">
+                    <div class="section-title">Work Experience:</div>
+                    <div class="section-content">
+                        <p>Company: Smart interviews</p>
+                        <p>Position: Mentor</p>
+                        <p>Duration: 2022,September- 2022,December</p>
+                        <p>Responsibilities:</p>
+                        <ul>
+                            <li>Doubt clearence</li>
+                            <li>Logic building</li>
+                            <li>Testing and debugging code</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Projects:</div>
+                    <div class="section-content">
+                        <p>Title: Virtual Wingman (EDITH)</p>
+                        <p>Description: It is a virtual assistant created for mobile, pc, etc 
+                            which will operate functionalities of the device by voice command. 
+                            I have begun to convert it into operating system. Here my role is 
+                            python developer and the complete code is written by me.</p>
+                        <p>Duration: 2021,August- 2021,September</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
