@@ -1,0 +1,225 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+} -->
+
+<!-- /* Style the header */
+/* .head { */
+    /* display: flex; */
+  /* background-color: #f1f1f1; */
+  /* background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+.ele{
+    display: flex;
+}
+
+</style>
+</head>
+<body>
+
+<div class="head">
+    <div class="ele">
+        <p style="justify-content: flex-start;"><img src="images/IRCTC.png" alt="irctc"></p>
+        <p style="justify-content: flex-end;"><img src="images/train.jpeg" alt="train"></p>
+    </div>
+  
+</div>
+
+</body>
+</html> */ -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Two Logos in Flexbox</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<style>
+    body {
+  margin: 0;
+  padding: 5px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px; /* Adjust the height according to your requirements */
+  background-color: white; /* Optional background color for the flex container */
+}
+.flex-container1 {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  height: 600px; 
+  /*Adjust the height according to your requirements */
+  background-image: url(images/train_home.jpg); /* Optional background color for the flex container */
+  background-repeat :no-repeat no-repeat ;
+  z-index: -1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 10px; /* Adjust the padding according to your requirements */
+}
+
+.logo img {
+  height: 75px; /* Ensures the logo's height fits within the container */
+  width: 75px; /* Ensures the logo's width fits within the container */
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 80vh;
+    /* background-size: cover;
+    background-position: center;
+    background-position-x: center;
+    background-position-y: center; */
+} 
+.container{
+  display: flex;
+  
+      width: 520px;
+      height: 475px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      /* padding: 20px; */
+    
+}
+.container1{
+  display: flex;
+  /* justify-content: space-between; */
+  width: 520px;
+  flex-direction: column;
+}
+.container2{
+  display: flex;
+  justify-content: space-between;
+  width: 520px;
+  text-align: center;
+
+}
+.container3{
+  display: flex;
+  width:259px;
+  height:auto;
+}
+.textheading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    top: 3px;
+    padding-left: 730px;
+}
+
+
+
+</style>
+<body>
+  <div class="flex-container">
+    <div class="logo" style="padding-left: 10px;">
+      <!-- Left logo goes here -->
+      <img src="images/IRCTC.png" alt="Left Logo">
+
+    </div>
+    <div class="logo" style="padding-right: 10px ;">
+      <!-- Right logo goes here -->
+      <img src="images/secondry-logo.png" alt="Right Logo">
+    </div>
+    
+  </div>
+  <div class="flex-container1" style="margin: 10px; flex: 1;">
+    <div class="container1" style="margin-left: 75px; margin-top: 40px;">
+      <div style="display: flex; height: 20px; width: auto; text-align: center; justify-content: space-between;">
+        <label style="height:20px; width: 259.4px; background-color:rgb(5, 5, 134) ; color: white;">PNR STATUS</label>
+        <label style="height:20px; width: 259.4px; background-color:rgb(5, 5, 134) ; color: white;">VACANCY</label>
+      </div>
+      <div class="container">
+        <div style="text-align: start;">
+          <div class="container2" style="text-align: start; justify-content: space-between; display: flex; margin-top: 10px;">
+            <img src="images/logo_top_eng.jpg" alt="75 azad ka mahotsav" style="width: 150px; height: 75px;">
+            <label style="color: rgb(5, 5, 129); size: 30px; margin-top: 4px; " ><b>BOOK TICKET</b></label>
+            <!-- <h4>BOOK TICKET</h4> -->
+            <img src="images/G20_Logo.png" alt="G20_Logo" style="width: 150px; height: 75px;">
+
+          </div>
+          <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div class="container3" style="display: flex; flex-direction: column; text-align: center;">
+              <input type="text" name="From" placeholder="From" id="from" style="height: 20px; width: 250px;">
+              <br>
+              <i _ngcontent-sjw-c67="" class="fa fa-exchange rotate90"></i>
+              <br>
+              <input type="text" name="To" placeholder="To" id="to" style="height: 20px; width: 250px;">
+            </div>
+            <div class="container3" style="display: flex; flex-direction: column;">
+              <input type="date" name="Date" placeholder="Date" id="date" style="margin-bottom: 8.6px;height: 20px; width: 250px;">
+              <br>
+              <br>
+              <input type="text" name="To" placeholder="To" id="to1" style="margin-top: 8.6px;height: 20px; width: 250px;">
+            </div>
+          </div>
+          <br>
+          <div _ngcontent-mgu-c67="" class="col-md-7 col-xs-12 remove-padding"><span _ngcontent-mgu-c67="" class="icn"><i _ngcontent-mgu-c67="" class="fa fa-th-large" style="margin: 3px 0px 0px 8px;"></i></span><div _ngcontent-mgu-c67="" class="form-group"><p-dropdown _ngcontent-mgu-c67="" formcontrolname="journeyQuota" id="journeyQuota" pinputtext="" class="ng-tns-c65-12 ng-untouched ng-pristine ng-valid ui-inputwrapper-filled"><div class="ng-tns-c65-12 ui-dropdown ui-widget ui-state-default ui-corner-all" style="width: 100%;"><div class="ui-helper-hidden-accessible ng-tns-c65-12"><input type="text" readonly="" aria-haspopup="listbox" role="listbox" class="ng-tns-c65-12" aria-label="GENERAL"></div><div class="ui-dropdown-label-container ng-tns-c65-12"><span class="ng-tns-c65-12 ui-dropdown-label ui-inputtext ui-corner-all ng-star-inserted">GENERAL<!----><!----><!----></span><!----><!----><!----><!----></div><div role="button" aria-haspopup="listbox" class="ui-dropdown-trigger ui-state-default ui-corner-right ng-tns-c65-12"><span class="ui-dropdown-trigger-icon ui-clickable ng-tns-c65-12 pi pi-chevron-down"></span></div><!----></div></p-dropdown></div></div>
+          <br>
+          <div id="checkbox-container">
+            <input type="checkbox" id="1">
+            <label for="1" style="font-size: 13px;">Person With Disability Concession</label>
+          </div>
+          <div id="checkbox-container">
+            <input type="checkbox" id="2">
+            <label for="2" style="font-size: 13px;">Flexible With Date</label>
+          </div>
+          <div id="checkbox-container">
+            <input type="checkbox" id="3">
+            <label for="3" style="font-size: 13px;">Train With Available Berth</label>
+          </div>
+          <div id="checkbox-container">
+            <input type="checkbox" id="4">
+            <label for="4" style="font-size: 13px;">Railway Pass Concession</label>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <button style="color:white;background-color:orange; margin-left: 20px; border-radius: 5px; border: 1px solid orange;">Search</button>
+            <button style="color:white;background-color: rgb(7, 167, 7) ;margin-right: 20px; border-radius: 5px;  border: 1px solid rgb(7, 167, 7);">Try booking in Ask DISHA 2.0</button>
+          </div>
+          <!-- <div class="container" style="text-align: center;">
+            <div class="container2"  style="justify-content: center; display: flex; margin-top: 10px; position: absolute; width: auto; height: auto; ">
+              <input type="text" name="From" id="from" placeholder="From">
+              <i _ngcontent-sjw-c67="" class="fa fa-exchange rotate90"></i>
+              <input type="text" name="To" id="to" placeholder="To">
+            </div>
+            <div class="container3"  style="text-align: center; display: flex; margin-top: 10px; position: absolute; width: auto; ">
+              <input type="date" name="Date" id="date" placeholder="Date">
+              
+            </div>
+          </div> -->
+        </div>
+      </div>
+      
+    </div>
+    <div style= "margin-left: 250px; margin-top:15px;">
+      <label style="text-align: end; justify-content: end; font-size: 50px;color: rgb(2, 2, 92);">INDIA RAILWAYS</label>
+      <br>
+      <span style="font-size: 20px;">Safety|</span>
+      <span style="font-size: 20px;">Security|</span>
+      <span  style="border: 0px;font-size: 20px;">Punctuality</span>
+    
+    </div>
+  </div>
+</body>
+</html>
